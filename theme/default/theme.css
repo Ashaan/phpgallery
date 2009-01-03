@@ -1,0 +1,467 @@
+body {
+  border      : 0px;
+  padding     : 0px;
+  margin      : 0px;
+  font-size   : 12px;
+  background  : #dddddd;
+}
+
+.header {
+  border-bottom : 3px solid #777777;
+  background    : url(image/header.gif);
+  text-align    : center;
+  color         : #777777;
+  padding       : 3px;
+}
+.header td {
+  width     : 33%;
+  border    : 0px;
+  padding   : 0px;
+  margin    : 0px;
+  height    : 0px;
+  border-spacing : 0 0;
+  padding-right: 3px;
+}
+.header table {
+  width     : 100%; 
+  border    : 0px;
+  padding   : 0px;
+  margin    : 0px;
+  height    : 0px;
+  border-spacing : 0 0;
+}
+
+.header a {
+  color         : #777777;
+  text-decoration: none;
+  font-weight   : bold;
+}
+
+.content {
+  background   : url(image/content.jpg) repeat-x #dddddd;
+  margin       : 0px;
+  margin-bottom: 5px; 
+  padding      : 5px;
+}
+
+.footer {
+  border-top    : 1px solid #FFFFFF;
+  text-align    : center;
+  color         : #111111;
+  padding       : 3px;
+  margin-left   : 10px;
+  margin-right  : 10px;
+}
+
+.contentNavigatorBottom,
+.contentNavigatorTop {
+  width         : 800px;
+  padding-left  : 50%;
+  margin-left   : -400px;
+  font-weight   : bold;
+  font-weight   : bold;
+  font-size     : 12px;
+  color         : #444444;
+}
+
+.contentNavigator {
+  font-weight   : bold;
+  font-size     : 12px;
+  text-decoration: none;
+  color         : #444444;
+}
+.contentNavigatorSelected {
+  font-weight   : bold;
+  font-size     : 12px;
+  text-decoration: none;
+  color         : #111111;
+}
+
+div#gallery {
+  padding-left  : 50%;
+  text-align    : center;
+  margin-left   : -400px;
+}
+
+#gallery .category {
+  margin-top    : 15px;
+  margin-bottom : 20px;
+  padding-bottom: 5px;
+  width         : 800px;
+  background    : #FFFFFF;
+     
+}
+
+#gallery .categoryTitle{
+  position      : absolute;
+  width         : 800px;
+  margin-top    : -12px;
+  padding-top   : 15px;
+  font-size     : 20px;
+  font-weight   : bold;
+  background    : url(image/category.gif) no-repeat center top;
+}
+#gallery .categoryStat{
+  position      : absolute;
+  width         : 800px;
+  margin        : 0px;
+  padding-top   : 20px;
+  margin-top    : 0px;
+  margin-bottom : 0px;
+  font-size     : 11px;
+  height        : 0px;
+}
+
+#gallery .categoryList{
+  padding        : 17px;
+  padding-top    : 40px;
+}
+
+#gallery .categoryMore{
+  margin-top     : -20px;
+  padding        : 0px;
+}
+
+#gallery .album {
+  width      : 250px;
+  background : url(image/galThumb.png) no-repeat center top;
+  padding    : 0px;
+  margin     : 0px;
+}
+
+#gallery .album a {
+  border     : 0px;
+  text-decoration : none;
+}
+#gallery .album a img{
+  border     : 0px;
+  margin-top : 7px;
+  margin-left: 3px;
+}
+#gallery .album a span.title {
+  color       : #333333;
+  text-decoration : none;
+  font-size   : 12px;
+  margin-top  : 0px;
+  padding-top : 0px;
+  font-weight : bold;
+}
+
+#gallery .album a span.count {
+  color       : #333333;
+  text-decoration : none;
+  font-size   : 12px;
+  margin-top  : 0px;
+  padding-top : 0px; /*-2px;*/
+}
+
+
+div#category {
+  padding-left  : 50%;
+  text-align    : center;
+  margin-left   : -400px;
+}
+#category .categoryPosition{
+  margin-top    : 15px;
+  margin-bottom : 20px;
+  background    : #FFFFFF;
+  width         : 800px;
+  padding-bottom: 0px;/*-5px; */
+}
+#category .categoryTitle{
+  position      : absolute;
+  width         : 800px;
+  margin-top    : -12px;
+  padding-top   : 20px;
+  font-size     : 20px;
+  font-weight   : bold;
+  background    : url(image/category.gif) no-repeat center top;
+}
+#category .categoryStat{
+  position      : absolute;
+  width         : 800px;
+  margin        : 0px;
+  padding-top   : 12px;
+  margin-top    : 0px;
+  margin-bottom : 0px;
+  font-size     : 11px;
+  height        : 0px;
+}
+#category .categoryList{
+  padding        : 17px;
+  padding-top    : 40px;
+}
+
+#category .album {
+  width      : 250px;
+  background : url(image/galThumb.png) no-repeat center top;
+  padding    : 0px;
+  margin     : 0px;
+}
+#category .album a {
+  border     : 0px;
+  text-decoration : none;
+}
+#category .album a img{
+  border     : 0px;
+  margin-top : 7px;
+  margin-left: 3px;
+}
+#category .album a span.title {
+  color       : #333333;
+  text-decoration : none;
+  font-size   : 12px;
+  margin-top  : 0px;
+  padding-top : 0px;
+  font-weight : bold;
+}
+#category .album a span.count {
+  color       : #333333;
+  text-decoration : none;
+  font-size   : 12px;
+  margin-top  : -2px;
+  padding-top : 0px;
+}
+
+div#album {
+  padding-left  : 50%;
+  text-align    : center;
+  margin-left   : -400px;
+}
+#album .info{
+  display       : block;
+  position      : relative;
+  margin        : 5px;
+  padding       : 5px;
+  width         : 200px;
+  float         : left;
+  border        : 0px;
+}
+#album table.list{
+  width         : 600px;
+  margin        : 5px;
+  margin-left   : 0px;
+  padding       : 5px;
+  border-left   : 1px solid #FFFFFF; 
+}
+#album .albumTitle{
+  text-align    : center;
+  font-size     : 20px;
+  font-weight   : bold;
+  border-bottom : 1px solid #FFFFFF;
+}
+#album .albumComment {
+  text-align    : left;
+  min-height    : 50px;
+  border-bottom : 1px solid #FFFFFF;
+}
+#album .albumStat {
+  text-align    : center;
+  border-bottom : 1px solid #AAAAAA;
+}
+#album .albumArchive {
+  text-align    : center;
+  border-bottom : 1px solid #888888;
+}
+#album .albumArchive a{
+  text-decoration : none;
+  font-weight   : bold;
+  color         : #444444;
+}
+
+#album .albumNavigator {
+  text-align    : center;
+  display       : block;
+}
+#album .albumNavigator span {
+  padding-left  : 3px;
+  padding-right : 3px;
+  text-align    : center;
+  text-decoration : none;
+  font-weight   : bold;
+  color         : #444444;
+}
+#album .albumNavigator a {
+  padding-left  : 3px;
+  padding-right : 3px;
+  text-align    : center;
+  text-decoration : none;
+  font-weight   : bold;
+  color         : #222222;
+}
+
+#album table a {
+  border : 0px;
+  text-decoration : none;
+}
+#album table img {
+  border : 0px;
+}
+
+#view {
+  border    : 0px;
+}
+div#view {
+  position      : absolute;
+  display       : none;
+  top           : 0px;
+  left          : 0px;
+  width         : 100%;
+  height        : 100%;
+  padding       : 0px;
+  margin        : 0px;
+  border        : 0px;
+  background    : url(image/trans.png);
+}
+#view .viewContent {
+  position      : absolute;
+  top           : 50%;
+  left          : 50%;
+  text-align    : center;
+  vertical-align: top;
+  margin-left   : -302px;
+  margin-top    : -300px;
+  width         : 604px;
+  border        : 1px solid #FFFFFF;
+  background    : url(image/trans2.png);
+  padding : 2px;
+}
+#view .viewNavigator {
+  width   : 600px;
+  height  : 82px;
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+  margin-left : 2px;
+}
+#view .prev{
+  width     : 300px;
+  font-size : 0px;
+  float     : left;
+  text-align:right;
+  clip      : auto;
+}
+#view .next{
+  width     : 300px;
+  font-size : 0px;
+  float     : right;
+  text-align: left;
+  clip      : auto;
+}
+#view .viewNavigator img {
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+}
+#view .viewNavigator a {
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+}
+#view .viewImage {
+ /* width     : 600px;*/
+  padding   : 0px;
+  margin    : 0px;
+  text-align: center;
+/*  border    : 2px solid #000000;*/
+}
+#view .viewImage .title{
+  text-align    : center;
+  font-size     : 14px;
+  border-bottom : 2px solid #000000;
+}
+#view .viewImage img,
+#view .viewImage object {
+  padding   : 0px;
+  margin    : 0px;
+  margin-bottom:-4px;
+  border    : 1px solid #000000;
+}
+
+
+
+
+
+div#loginButton {
+  font-weight : bold;
+}
+#loginButton a {
+  color : #00AAAA;
+}
+.active#loginButton a{
+  color : #AAAA00;
+}
+
+div#loginZone {
+  position      : absolute;
+  top           : 27px;
+  right         : 3px;
+  width         : 180px;
+/*  height        : 100px;*/
+  z-index       : 100;
+  background    : url(image/content.jpg) repeat-x #dddddd;
+  border        : 2px solid #000000;  
+}
+#loginZone table {
+  width        : 180px;
+}
+
+#loginZone .title {
+  border-bottom : 2px solid #777777;
+  background    : url(image/header.gif);
+  text-align    : center;
+  font-size     : 13px;
+  font-weight   : bold;
+}
+#loginZone .name {
+  width       : 100px;
+  text-align  : right;
+}
+#loginZone .value {
+  text-align  : left;
+  width       : 80px;
+  padding     : 2px;
+}
+#loginZone .value input {
+  width     : 80px;
+  font-size : 12px;
+  border    : 0px;
+  background: #dddddd;
+}
+#loginZone .option {
+  text-align : left;
+}
+#loginZone .button {
+  padding-right    :2px
+  text-align : right;
+}
+#loginZone .button input {
+  border     : 1px solid #333333;
+  background : #666666;
+  color      : #dddddd;
+  font-size  : 12px;
+  font-weight: bold;
+  padding    : 0px;
+  margin-bottom : 1px;
+  margin-right  : 1px;
+}
+#loginZone .button input:hover {
+  background : #999999;
+  color      : #eeeeee;
+}
+
+#loginZone .menu {
+  border        : 1px solid #333333;
+  background    : transparent;
+  color         : #222222;
+  font-size     : 12px;
+  font-weight   : bold;
+  padding       : 0px;
+  margin-bottom : 0px;
+  margin-right  : 0px;
+  width         : 180px;
+}
+#loginZone .menu:hover {
+  background : #888888;
+  color      : #eeeeee;
+}

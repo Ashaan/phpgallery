@@ -1,0 +1,595 @@
+body {
+  border      : 0px;
+  padding     : 0px;
+  margin      : 0px;
+  font-size   : 12px;
+  background  : #99AAFF;
+}
+
+.header {
+  border        : 0px;
+  background    : url(image/header.png) bottom;
+  text-align    : center;
+  color         : #777777;
+  padding       : 0px;
+  height        : 55px;
+}
+.header td {
+  width     : 33%;
+  border    : 0px;
+  padding   : 0px;
+  margin    : 0px;
+  height    : 0px;
+  border-spacing : 0 0;
+  padding-right: 3px;
+}
+.header table {
+  width     : 100%;
+  border    : 0px;
+  padding   : 0px;
+  margin    : 0px;
+  height    : 0px;
+  border-spacing : 0 0;
+}
+.header img{
+  border : 0px;
+}
+
+.content {
+  position     : absolute;
+  top          : 55px;
+  bottom       : 20px;
+  width        : 100%;
+  left         : 0px;
+  margin       : 0px;
+  padding      : 0px;
+  overflow     : hidden;
+}
+
+#footer {
+  position      : absolute;
+  bottom        : 0px;
+  width         : 100%;
+  height        : 20px;
+  border        : 0px;
+  background    : url(image/footer.png) top;
+  text-align    : center;
+  margin        : 0px;
+  padding       : 0px;
+  overflow      : hidden;
+}
+#footer .info {
+  background    : url(image/info.png) no-repeat center center;
+  border        : 1px transparent;
+  padding       : 0px;
+  margin        : 0px;
+  width         : 16px;
+  height        : 16px;
+}
+#footer .info:hover {
+  border        : 1px solid #AAAAAA;
+}
+
+
+div#tree {
+  position      : absolute;
+  top           : 0px;
+  bottom        : 0px;
+  left          : 0px;
+  width         : 250px;
+  margin        : 20px;
+  padding       : 5px;
+  padding-left  : 0px;
+  border        : 1px solid #000000;
+  background    : #90A0FF;
+  -moz-border-radius : 10px;
+  overflow      : auto;
+}
+
+#tree .container {
+  margin-left : 10px;
+}
+#tree .expand {
+  position     : relative;
+  top          : 0px;
+  left         : 0px;
+  background   : url(image/bottom.png) no-repeat center left;
+  width        : 20px;
+  height       : 22px;
+  padding      : 0px;
+  margin       : 0px;
+  margin-left  : -20px;
+  float        : left;
+  cursor       : w-resize;
+}
+#tree .expandNot {
+  position     : relative;
+  left         : 0px;
+  top          : 0px;
+  background   : url(image/right.png) no-repeat center left;
+  width        : 20px;
+  height       : 22px;
+  padding      : 0px;
+  margin       : 0px;
+  margin-left  : -20px;
+  float        : left;
+  cursor       : s-resize;
+}
+#tree .expandCannot {
+  position     : relative;
+  top          : 0px;
+  left         : 0px;
+  background   : none;
+  width        : 20px;
+  height       : 22px;
+  padding      : 0px;
+  margin       : 0px;
+  margin-left  : -20px;
+  float        : left;
+}
+
+#tree .title {
+  border       : 1px solid transparent;
+  padding      : 1px;
+  padding-left : 20px;
+  height       : 22px;
+  overflow     : hidden;
+  font-weight  : bold;
+  font-size    : 16px;
+  white-space  : nowrap;
+  cursor       : pointer;
+}
+
+#moveAlbum,
+#tree .titleSelected {
+  border           : 1px solid #6677FF;
+  background-color : #8899FF;
+  padding      : 1px;
+  padding-left : 20px;
+  height       : 22px;
+  overflow     : hidden;
+  font-weight  : bold;
+  font-size    : 16px;
+  white-space  : nowrap;
+  cursor       : pointer;
+}
+#moveAlbum {
+  position: absolute;
+  width   : 200px;
+  z-index : 3500;
+}
+
+#tree .title:hover {
+  border           : 1px solid #6677FF;
+  background-color : #8899FF;
+}
+#tree .element {
+}
+
+
+#tree .catTitle {
+  border       : 1px solid transparent;
+  background   : url(image/right.png) no-repeat center left;
+  padding      : 1px;
+  padding-left : 20px;
+  height       : 22px;
+  overflow     : hidden;
+  font-weight  : bold;
+  font-size    : 16px;
+  white-space  : nowrap;
+}
+#tree .catTitleDeploy {
+  border       : 1px solid transparent;
+  background   : url(image/bottom.png) no-repeat center left;
+  padding      : 1px;
+  padding-left : 20px;
+  height       : 22px;
+  overflow     : hidden;
+  font-weight  : bold;
+  font-size    : 16px;
+  white-space  : nowrap;
+}
+#tree .catTitleCannot {
+  border       : 1px solid transparent;
+  background   : none;
+  padding      : 1px;
+  padding-left : 20px;
+  height       : 22px;
+  overflow     : hidden;
+  font-weight  : bold;
+  font-size    : 16px;
+  white-space  : nowrap;
+}
+
+#tree .catTitle:hover,
+#tree .catTitleDeploy:hover,
+#tree .catTitleCannot:hover {
+  border           : 1px solid #6677FF;
+  background-color : #8899FF;
+}
+
+#tree img {
+  margin        : 0px;
+  margin-bottom : 0px;
+  margin-right  : 5px;
+  height        : 20px;
+  vertical-align: text-top;
+}
+
+
+
+div#data {
+  position      : absolute;
+  top           : 0px;
+  bottom        : 0px;
+  left          : 280px;
+  right         : 0px;
+  margin        : 20px;
+  padding       : 0px;
+  border        : 1px solid #000000;
+  background    : #90A0FF;
+  -moz-border-radius : 10px;
+  overflow      : hidden;
+}
+#data .title {
+  position      : absolute;
+  overflow      : auto;
+  border-bottom : 1px solid #000000;
+  top           : 0px;
+  left          : 0px;
+  right         : 0px;
+  height        : 20px;
+  text-align    : center;
+  font-weight   : bold;
+  font-size     : 15px;
+}
+#data .info {
+  position      : absolute;
+  top           : 20px;
+  left          : 0px;
+  bottom        : 0px;
+  width         : 150px;
+  border-right  : 1px solid #000000
+}
+#data .zone {
+  position      : absolute;
+  top           : 20px;
+  bottom        : 0px;
+  left          : 151px;
+  right         : 0px;
+  overflow      : hidden;
+}
+#data .option {
+  position      : absolute;
+  top           : 0px;
+  height        : 25px;
+  left          : 0px;
+  right         : 0px;
+  overflow      : hidden;
+  border-bottom : 1px solid #000000
+}
+#data .list {
+  position      : absolute;
+  top           : 25px;
+  bottom        : 0px;
+  left          : 0px;
+  right         : 0px;
+  overflow      : auto;
+}
+#data .listElement {
+  float       : left;
+  border      : 1px solid transparent;
+  padding     : 2px;
+  margin      : 2px;
+  width       : 80px;
+  text-align  : center;
+  overflow    : hidden;
+}
+#data .listElement:hover {
+  border           : 1px solid #6677FF;
+  background-color : #8899FF;
+}
+#data .listElement img {
+  margin-bottom : -4px;
+  width         : 80px;
+}
+
+#data .infoBox {
+  width         : 140px;
+  margin        : 5px;
+  background-color : #8899FF;
+  border        : 1px solid #000000;
+}
+#data .infoTitle {
+  border-bottom    : 1px solid #000000;
+  background-color : #7788FF;
+  overflow         : hidden;
+  text-align       : center;
+  font-weight      : bold;
+}
+#data .infoElement {
+  text-align       : center;
+}
+
+div#view {
+  position      : absolute;
+  display       : none;
+  top           : 0px;
+  left          : 0px;
+  width         : 100%;
+  height        : 100%;
+  padding       : 0px;
+  margin        : 0px;
+  border        : 0px;
+  background    : url(image/trans.png);
+}
+
+div#nav {
+  position      : absolute;
+  top           : 0px;
+  left          : 0px;
+  width         : 100%;
+  height        : 60px;
+  padding       : 0px;
+  margin        : 0px;
+  border        : 0px;
+  background    : url(image/trans2.png);
+  overflow      : hidden;
+  border-bottom : 1px solid #FFFFFF;
+}
+#nav .scroll {
+  position      : absolute;
+  top           : 0px;
+  left          : 0px;
+  width         : 10px;
+}
+#nav .image {
+  position      : relative;
+  border-right  : 1px solid #FFFFFF;
+  border-left   : 1px solid #FFFFFF;
+  width         : 80px;
+  margin        : 0px;
+  margin-left   : -1px;
+  margin-right  : -1px;
+  overflow      : hidden;
+  float         : left;
+  z-index       : 1;
+}
+#nav .image:hover {
+  border        : 1px solid #FFFF00;
+  height        : 59px;
+  z-index       : 2;
+  overflow      : visible;
+}
+#nav .imageSelect {
+  position      : relative;
+  border        : 1px solid #FF0000;
+  height        : 59px;
+  width         : 80px;
+  margin        : 0px;
+  margin-left   : -1px;
+  margin-right  : -1px;
+  float         : left;
+  z-index       : 3;
+  overflow      : visible;
+}
+#nav .left {
+  position      : absolute;
+  top           : 0px;
+  left          : 0px;
+  width         : 15%;
+  height        : 80px;
+  z-index       : 100;
+}
+#nav .right {
+  position      : absolute;
+  top           : 0px;
+  right         : 0px;
+  width         : 15%;
+  height        : 80px;
+  z-index       : 100;
+}
+#view .viewZone {
+  position      : absolute;
+  top           : 61px;
+  bottom        : 0px;
+  left          : 0px;
+  width         : 100%;
+  text-align    : center;
+  vertical-align: middle;
+  padding       : 0px;
+  border        : 1px solid #FF00FF;
+}
+
+#view .viewZone object,
+#view .viewZone img {
+  padding       : 0px;
+  margin        : 0px;
+  margin-bottom :-2px;
+  border        : 1px solid #000000;
+  min-height    : 100px;
+  max-height    : 100%;
+  min-width     : 100px;
+  max-width     : 100%;
+}
+
+
+
+#view .viewContent {
+  position      : absolute;
+  top           : 0px;
+  bottom        : 0px;
+  left          : 50%;
+  text-align    : center;
+  margin-left   : -322px;
+  width         : 644px;
+  border-left   : 1px solid #FFFFFF;
+  border-right  : 1px solid #FFFFFF;
+  background    : url(image/trans2.png);
+  padding       : 2px;
+}
+#view .viewNavigator {
+  width   : 640px;
+  height  : 62px;
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+  margin-left : 2px;
+}
+#view .prev{
+  width     : 320px;
+  font-size : 0px;
+  float     : left;
+  text-align:right;
+  clip      : auto;
+}
+#view .next{
+  width     : 320px;
+  font-size : 0px;
+  float     : right;
+  text-align: left;
+  clip      : auto;
+}
+#view .viewNavigator img {
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+}
+#view .viewNavigator a {
+  padding : 0px;
+  margin  : 0px;
+  border  : 0px;
+}
+#view .viewImage {
+  position  : absolute;
+  left      : 0px;
+  top       : 62px;
+  bottom    : 35px;
+  width     : 100%;
+  padding   : 0px;
+  margin    : 0px;
+  text-align: center;
+  overflow      : auto;
+}
+#view .viewImage img,
+#view .viewImage object {
+  padding   : 0px;
+  margin    : 2px;
+  margin-bottom:-2px;
+  border    : 1px solid #000000;
+  min-height : 100px;
+  max-height : 99%;
+  min-width  : 100px;
+  max-width  : 99%;
+}
+
+#viewTitle {
+  position : absolute;
+  bottom   : 0px;
+  left     : 0px;
+  width    : 100%;
+  height   : 35px;
+  border-top : 1px solid #FFFFFF;
+  background    : url(image/trans2.png);
+}
+
+
+
+
+div#loginButton {
+  font-weight : bold;
+}
+#loginButton a {
+  color : #00AAAA;
+}
+.active#loginButton a{
+  color : #AAAA00;
+}
+
+div#loginZone {
+  position      : absolute;
+  top           : 60px;
+  right         : 3px;
+  width         : 180px;
+  z-index       : 100;
+  background    : #AABBFF;
+  border        : 1px solid #000000;
+}
+#loginZone table {
+  width        : 180px;
+}
+
+#loginZone .title {
+  border-bottom : 0px;
+  background    : #8899FF;
+  text-align    : center;
+  font-size     : 13px;
+  font-weight   : bold;
+}
+#loginZone .name {
+  width       : 100px;
+  text-align  : right;
+}
+#loginZone .value {
+  text-align  : left;
+  width       : 80px;
+  padding     : 2px;
+}
+#loginZone .value input {
+  width     : 80px;
+  font-size : 12px;
+  border    : 0px;
+  background: #dddddd;
+}
+#loginZone .option {
+  text-align : left;
+}
+#loginZone .button {
+  padding-right    :2px;
+  text-align : right;
+}
+#loginZone .button input {
+  border     : 1px solid #333333;
+  background : #666666;
+  color      : #dddddd;
+  font-size  : 12px;
+  font-weight: bold;
+  padding    : 0px;
+  margin-bottom : 1px;
+  margin-right  : 1px;
+}
+#loginZone .button input:hover {
+  background : #999999;
+  color      : #eeeeee;
+}
+
+#loginZone .menu {
+  border        : 1px solid #333333;
+  background    : transparent;
+  color         : #222222;
+  font-size     : 12px;
+  font-weight   : bold;
+  padding       : 0px;
+  margin-bottom : 0px;
+  margin-right  : 0px;
+  width         : 180px;
+}
+#loginZone .menu:hover {
+  background : #888888;
+  color      : #eeeeee;
+}
+
+div#pageInfo {
+  position      : absolute;
+  left          : 2px;
+  bottom        : 22px;
+  z-index       : 120;
+  text-align    : center;
+  vertical-align: middle;
+  font-weight   : bold;
+  font-size     : 12px;
+  padding       : 4px;
+  background    : #AABBFF;
+  border        : 1px solid #000000;
+  margin-bottom : 0px;
+}
